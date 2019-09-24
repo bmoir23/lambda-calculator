@@ -1,0 +1,8 @@
+.operators {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+    margin: 10px 10px 10px 0px;
+}

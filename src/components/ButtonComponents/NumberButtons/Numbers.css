@@ -1,0 +1,19 @@
+.numbers {
+    border: none;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    background-color: darkblue;
+    color: white;
+    margin: 10px 0px 10px 20px;
+}
+
+.zero {
+    border: none;
+    height: 60px;
+    width: 140px;
+    border-radius: 30px;
+    background-color: teal;
+    color: white;
+    margin: 10px 0px 10px 20px;
+}

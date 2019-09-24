@@ -1,4 +1,5 @@
 import React from "react";
+import './Numbers.css'
 
 
 const NumberButton = (setDisplay) => {
