@@ -38,7 +38,7 @@ const setResult = () => {
         <Display props= {display}/>
         <div className='buttons'>
         <div className='umbers'>
-          <Specials setDisplayZero={zeroDisplay} setDisplay={addToDisplay}/>
+          <Specials setDisplayZero={setZeroDisplay} setDisplay={addToDisplay}/>
           <Numbers setDisplay={addToDisplay}/>
 
         </div>
