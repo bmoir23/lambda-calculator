@@ -1,9 +1,28 @@
 import React from "react";
 
-const OperatorButton = () => {
-  return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
+const OperatorButton = (props) => {
+  const handleAddToEquation = () => {
+    props.setDisplay(props.props.value);
+  };
+
+  const addResultToDisplay = () =>{
+    props.setResult();
+  }
+
+  if(props.props.value === '='){
+    return (
+      <>
+      {<button className='operators' onClick={addResultToDisplay}>{props.props.char}</button>}
+      </>
+      
+    );
+  }else{
+    return (
+      <>
+        {<button className='operators' onClick={handleAddToEquation}>{props.props.char}</button>}
     </>
-  );
-};
+    );
+  }
+  };
+export default OperatorButton; 
+

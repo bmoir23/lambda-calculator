@@ -1,9 +1,28 @@
 import React from "react";
 
-const SpecialButton = () => {
+const SpecialButton = (props) => {
+
+  const zeroDisplay = () => {
+    props.setDisplayZero('0');
+  };
+
+  const handleSetDisplay = () => {
+    props.setDisplay(props.props);
+  };
+
+  if(props.props === 'C'){
   return (
     <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+      {<button className='specials' onClick={zeroDisplay}>{props.props}</button>}
+      </>
   );
+  }else{
+      return(
+        <>
+          {<button className='specials' onClick={handleSetDisplay}>{props.props}</button>}
+        </>
+      )
+  }
 };
+
+export default SpecialButton;

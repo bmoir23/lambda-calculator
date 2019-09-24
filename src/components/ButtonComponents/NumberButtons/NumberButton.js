@@ -1,9 +1,25 @@
 import React from "react";
 
-const NumberButton = () => {
+
+const NumberButton = (setDisplay) => {
+
+  const handleAddToEquation = () => {
+    setDisplay.setDisplay(setDisplay.number);
+  };
+
+  if(setDisplay.number === '0'){
   return (
     <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
+      {<button className='zero' onClick={handleAddToEquation}>{setDisplay.number}</button>}
     </>
   );
+  }else{
+   return(
+   <>
+    {<button className='numbers' onClick={handleAddToEquation}>{setDisplay.number}</button>}
+    </>
+  );
+
+}
 };
+export default NumberButton; 
