@@ -12,7 +12,7 @@ const Specials = (props) => {
 const [specials] = useState(specialButtons.specials);
   return (
     <div>
-      {specials.map(special => <SpecialButton props={special} key={special} setDisplayZero={props.setDispalyZero} setDisplay={props.SetDisplay}/>)}
+      {specials.map(special => <SpecialButton props={special} key={special} setDisplayZero={props.setDisplayZero} setDisplay={props.SetDisplay}/>)}
     </div>
   );
 };
