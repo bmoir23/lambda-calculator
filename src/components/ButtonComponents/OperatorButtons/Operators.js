@@ -6,7 +6,7 @@
 
 
 import React, {useState} from "react";
-import OperatorButton from '../OperatorButtons';
+import OperatorButton from '../OperatorButtons/OperatorButton';
 import operators from '../../../data';
 
 const Operators = (setDisplay) => {

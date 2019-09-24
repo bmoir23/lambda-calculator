@@ -24,7 +24,7 @@ const addToDisplay = value => {
   setDisplay(display.concat(value));
 };
 
-const zeroDisPlay = () => {
+const zeroDisplay = () =>{
   setDisplay('');
 };
 
@@ -38,7 +38,7 @@ const setResult = () => {
         <Display props= {display}/>
         <div className='buttons'>
         <div className='umbers'>
-          <Specials setDisplayZero={setZeroDisplay} setDisplay={addToDisplay}/>
+          <Specials setDisplayZero={zeroDisplay} setDisplay={addToDisplay}/>
           <Numbers setDisplay={addToDisplay}/>
 
         </div>
