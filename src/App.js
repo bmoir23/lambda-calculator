@@ -4,7 +4,7 @@ import Numbers from './components/ButtonComponents/NumberButtons/Numbers';
 import Operators from './components/ButtonComponents/OperatorButtons/Operators';
 import Specials from './components/ButtonComponents/SpecialButtons/Specials';
 import Display from './components/DisplayComponents/Display';
-// import { evaluate}  from 'mathjs';
+import { evaluate }  from 'mathjs';
 
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
@@ -28,9 +28,9 @@ const zeroDisplay = () =>{
   setDisplay('');
 };
 
-// const setResult = () => {
-//   setDisplay(`${evaluate(display)}`);
-// };
+const setResult = () => {
+  setDisplay(`${evaluate(display)}`);
+};
   return (
     <div className="container">
       <Logo />
