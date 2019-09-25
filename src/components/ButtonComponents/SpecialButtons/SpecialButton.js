@@ -1,5 +1,6 @@
 import React from "react";
-import './Specials.css';
+// import './Specials.css';
+import './App.css';
 
 const SpecialButton = (props) => {
 

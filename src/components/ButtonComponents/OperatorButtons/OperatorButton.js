@@ -1,5 +1,6 @@
 import React from "react";
-import './Operators.css';
+// import './Operators.css';
+import './App.css';
 
 const OperatorButton = (props) => {
   const handleAddToEquation = () => {
